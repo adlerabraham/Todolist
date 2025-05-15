@@ -10,7 +10,14 @@ function ListGroup({ onSelectItem }: Props) {
         'milk',
         'spinache',
         'rice',
-        'beans'
+        'lettuce',
+        'mouthwash',
+        'wipes',
+        'salade kit',
+        'juice',
+        'ground beef',
+        'croissant',
+
     ];
 
 
