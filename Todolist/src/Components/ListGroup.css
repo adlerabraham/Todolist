@@ -15,3 +15,21 @@
 .highlight-item {
     animation: highlight 1s ease;
 }
+
+.input-width {
+    width: 25% !important;
+}
+
+/* For responsive behavior */
+
+@media (max-width: 590px) {
+    .input-width {
+        width: 100% !important;
+    }
+}
+
+@media(min-width:591px) and (max-width:920px) {
+    .input-width {
+        width: 50% !important;
+    }
+}

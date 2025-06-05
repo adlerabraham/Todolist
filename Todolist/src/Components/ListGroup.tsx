@@ -81,14 +81,29 @@ function ListGroup() {
 
     return (
         <>
-            {/* <style>
-                {`
-                
-                `}
-            </style> */}
-            <h1>Grocery List</h1>
+            <h1 className="text-center">Grocery List</h1>
             <form onSubmit={handleSubmit}>
-                <input
+                {/* Add new item section */}
+                <div className="mb-4 p-3 bg-white rounded shadow-sm">
+                    <h5 className="mb-3">Add New Item</h5>
+                    <div className="input-group input-width">
+                        <input
+                            type="text"
+                            className="form-control"
+                            value={entry}
+                            onChange={(e) => setEntry(e.target.value)}
+                            placeholder="Enter new item..."
+                        />
+                        <button
+                            className="btn btn-primary"
+                            onClick={handleSubmit}
+                            disabled={!entry.trim()}
+                        >
+                            Add Item
+                        </button>
+                    </div>
+                </div>
+                {/* <input
                     type="text"
                     placeholder='Enter item'
                     value={entry}
@@ -100,7 +115,7 @@ function ListGroup() {
                     onClick={handleSubmit}
                 >
                     Add
-                </Button>
+                </Button> */}
             </form>
             <div className="d-flex justify-content-between align-items-center mb-3 p-2 bg-white rounded shadow-sm">
                 <div className="d-flex align-items-center">
