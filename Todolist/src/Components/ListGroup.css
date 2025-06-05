@@ -1,0 +1,17 @@
+@keyframes highlight {
+    0% {
+        background-color: #007bff;
+    }
+
+    50% {
+        background-color: #4da1ff;
+    }
+
+    100% {
+        background-color: #fff;
+    }
+}
+
+.highlight-item {
+    animation: highlight 1s ease;
+}
